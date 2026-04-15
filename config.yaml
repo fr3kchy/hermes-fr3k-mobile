@@ -1,0 +1,30 @@
+model:
+  default: xiaomi/mimo-v2-pro
+  provider: openrouter
+  base_url: https://openrouter.ai/api/v1
+providers: {}
+fallback_providers: []
+toolsets:
+- hermes-cli
+- terminal
+- file
+- web
+- skills
+- memory
+- cronjob
+- delegation
+- todo
+agent:
+  max_turns: 96
+  gateway_timeout: 1800
+  restart_drain_timeout: 60
+  tool_use_enforcement: auto
+  verbose: false
+  reasoning_effort: medium
+terminal:
+  backend: local
+  timeout: 180
+  persistent_shell: true
+  lifetime_seconds: 300
+browser:
+  enabled: false

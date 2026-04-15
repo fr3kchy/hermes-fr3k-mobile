@@ -1,0 +1,57 @@
+# capabilities.yaml — Intent/kind registry for Hermes IRC + Nostr integration.
+# Both hermes_irc_gateway.py and hermes_nostr_agent.py load this file.
+# Version bump here when adding a new intent or kind.
+
+version: 1
+
+intents:
+  - intent: help
+    patterns: ["!help$"]
+    domains: []
+    surfaces: [irc]
+
+  - intent: new_lead
+    patterns: ["new lead", "contact from", "submission"]
+    domains: [revenue]
+    surfaces: [irc]
+
+  - intent: alert
+    patterns: ["alert", "drift", "warning", "emergency"]
+    domains: [trading]
+    surfaces: [irc]
+
+  - intent: task_create
+    patterns: ["!task", "create task"]
+    domains: []           # falls back to channel domain
+    surfaces: [irc, "nostr:5301", "nostr:5302"]
+
+  - intent: status_check
+    patterns: ["!status", "system status"]
+    domains: []
+    surfaces: [irc]
+
+  - intent: content_post
+    patterns: ["!post", "publish", "schedule.*content"]
+    domains: [narrative]
+    surfaces: [irc]
+
+  - intent: governance
+    patterns: ["!backup", "!sync", "!memory", "governance"]
+    domains: [governance]
+    surfaces: [irc]
+
+nostr_kinds:
+  - kind: 5050
+    name: text-gen
+    price_sats: 21
+    intent: task_create
+
+  - kind: 5301
+    name: summarize
+    price_sats: 15
+    intent: task_create
+
+  - kind: 5302
+    name: translate
+    price_sats: 15
+    intent: task_create

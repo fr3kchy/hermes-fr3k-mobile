@@ -1,0 +1,3 @@
+User is interested in autonomous self-improvement and capability discovery. Wants me to continuously research, evaluate, and integrate new tools/techniques.
+§
+User gets frustrated with repetition and back-and-forth. Said "ffs" twice when I kept re-checking and re-prompting for something they confirmed was done. Wants me to trust their answers and move forward instead of re-verifying. Prefers blunt, fast responses.

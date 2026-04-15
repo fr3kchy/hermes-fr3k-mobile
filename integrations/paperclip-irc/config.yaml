@@ -1,0 +1,33 @@
+# Paperclip-IRC Integration for Hermes
+# IRC event bus for agent coordination
+
+irc:
+  server: localhost
+  port: 6697
+  tls: true
+  nickname: hgateway
+  channels:
+    - "#paperclip-trading"    # scalper alerts
+    - "#paperclip-revenue"    # lead intake
+    - "#paperclip-gov"        # cron reports, backups
+    - "#paperclip-narrative"  # content pipeline
+
+intents:
+  task_create:
+    patterns: ["!task", "create task"]
+    action: create_task
+  status_check:
+    patterns: ["!status", "system status"]
+    action: health_check
+  content_post:
+    patterns: ["!post", "publish"]
+    action: queue_content
+  governance:
+    patterns: ["!backup", "!sync", "!memory"]
+    action: governance_action
+
+event_routing:
+  cron_output: "#paperclip-gov"
+  session_alerts: "#paperclip-gov"
+  trading_signals: "#paperclip-trading"
+  content_queue: "#paperclip-narrative"

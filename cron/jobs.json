@@ -1,0 +1,108 @@
+{
+  "jobs": [
+    {
+      "id": "59bbb3ac2f1e",
+      "name": "morning-self-improvement",
+      "prompt": "Morning self-improvement + content cycle. 1) Search GitHub/Twitter/Reddit for AI agent business opportunities. 2) Draft a LinkedIn post about AI agents for business. MUST include Gumroad link: https://fr3k.gumroad.com or https://fr3k.gumroad.com/l/starter-25. End every post with CTA: Get started -> fr3k.gumroad.com. 3) Post via: bash ~/.hermes/scripts/postiz-post.sh \"post content with https://fr3k.gumroad.com/l/starter-25\" linkedin. 4) For each discovery: evaluate if it helps mcpintelligence.com.au revenue. If yes, create a skill. Execute everything without asking.",
+      "skills": [
+        "self-improvement"
+      ],
+      "skill": "self-improvement",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-16T04:49:22.367437+10:00",
+      "next_run_at": "2026-04-16T09:00:00+10:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null
+    },
+    {
+      "id": "1c6e2c806207",
+      "name": "evening-self-improvement",
+      "prompt": "Evening self-improvement + content cycle. 1) Search for AI agent trends on GitHub/HN. 2) Draft a TikTok post about AI agents. MUST include Gumroad link: https://fr3k.gumroad.com/l/complete-150. End with CTA: Full system -> fr3k.gumroad.com/l/complete-150. 3) Post via: bash ~/.hermes/scripts/postiz-post.sh \"post content with https://fr3k.gumroad.com/l/complete-150\" tiktok. 4) Run improvement cycle. Integrate any valuable discoveries. Execute everything without asking.",
+      "skills": [
+        "self-improvement"
+      ],
+      "skill": "self-improvement",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 21 * * *",
+        "display": "0 21 * * *"
+      },
+      "schedule_display": "0 21 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-16T04:49:23.390590+10:00",
+      "next_run_at": "2026-04-16T21:00:00+10:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null
+    },
+    {
+      "id": "2db0c9a8bcda",
+      "name": "midday-content",
+      "prompt": "Midday content post. Draft a LinkedIn post about a specific AI agent use case (customer support, lead gen, content creation). MUST include Gumroad link: https://fr3k.gumroad.com/l/skills-40. End with CTA: Grab the skill pack -> fr3k.gumroad.com/l/skills-40. Post via: bash ~/.hermes/scripts/postiz-post.sh \"post content with https://fr3k.gumroad.com/l/skills-40\" linkedin. Execute without asking.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 13 * * *",
+        "display": "0 13 * * *"
+      },
+      "schedule_display": "0 13 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-16T05:11:44.451909+10:00",
+      "next_run_at": "2026-04-16T13:00:00+10:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null
+    }
+  ],
+  "updated_at": "2026-04-16T05:11:44.454115+10:00"
+}
