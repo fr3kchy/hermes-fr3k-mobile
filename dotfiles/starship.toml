@@ -1,0 +1,60 @@
+# Starship prompt — fr3k mobile
+
+format = """
+[](bold green)\
+$os\
+[](bold green)\
+$directory\
+[](bold blue)\
+$git_branch\
+$git_status\
+[](bold blue)\
+$nodejs\
+$python\
+$rust\
+$golang\
+[](bold yellow)\
+$cmd_duration\
+[](bold red)\
+$character\
+"""
+
+[os]
+disabled = false
+style = "bold white"
+
+[os.symbols]
+Android = " "
+
+[directory]
+truncation_length = 3
+truncation_symbol = ".../"
+style = "bold blue"
+
+[git_branch]
+symbol = ""
+style = "bold green"
+
+[git_status]
+style = "bold red"
+
+[nodejs]
+symbol = ""
+style = "bold green"
+
+[python]
+symbol = ""
+style = "bold yellow"
+
+[golang]
+symbol = ""
+style = "bold cyan"
+
+[cmd_duration]
+min_time = 2000
+format = "took $duration"
+style = "bold yellow"
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
