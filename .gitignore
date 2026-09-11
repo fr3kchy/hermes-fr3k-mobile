@@ -24,3 +24,9 @@ auth.json
 .update_check
 .hermes_history
 .skills_prompt_snapshot.json
+
+# Dependency trees and bytecode (never commit)
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
